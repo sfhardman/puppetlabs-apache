@@ -316,6 +316,15 @@
     MellonCond <%= cond %>
          <%- end -%>
       <%- end -%>
+      <%- if directory['mellon_secure_cookie'] -%>
+    MellonSecureCookie "<%= directory['mellon_secure_cookie'] %>"
+      <%- end -%>
+      <%- if directory['mellon_sp_entity_id'] -%>
+    MellonSPEntityId "<%= directory['mellon_sp_entity_id'] %>"
+      <%- end -%>
+      <%- if directory['mellon_session_dump'] -%>
+    MellonSessionDump "<%= directory['mellon_session_dump'] %>"
+      <%- end -%>
     <%- end -%>
     <% if directory['request_headers'] and ! directory['request_headers'].empty? -%>
       ## Request Header rules

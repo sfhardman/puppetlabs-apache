@@ -1288,7 +1288,7 @@ If the string starts with / or | or syslog: the full path will be set. Otherwise
 
 ##### `scriptalias`
 
-Directory to use for global script alias 
+Directory to use for global script alias
 
 The default value is determined by your operating system:
 
@@ -3461,12 +3461,15 @@ Related parameters follow the names of `mod_auth_mellon` directives:
 - `mellon_endpoint_path`: Sets the [MellonEndpointPath][`mod_auth_mellon`] to set the mellon endpoint path.
 - `mellon_sp_metadata_file`: Sets the [MellonSPMetadataFile][`mod_auth_mellon`] location of the SP metadata file.
 - `mellon_idp_metadata_file`: Sets the [MellonIDPMetadataFile][`mod_auth_mellon`] location of the IDP metadata file.
-- `mellon_saml_rsponse_dump`: Sets the [MellonSamlResponseDump][`mod_auth_mellon`] directive to enable debug of SAML.
+- `mellon_saml_response_dump`: Sets the [MellonSamlResponseDump][`mod_auth_mellon`] directive to enable debug of SAML.
 - `mellon_set_env_no_prefix`: Sets the [MellonSetEnvNoPrefix][`mod_auth_mellon`] directive to a hash of attribute names to map
 to environment variables.
 - `mellon_sp_private_key_file`: Sets the [MellonSPPrivateKeyFile][`mod_auth_mellon`] directive for the private key location of the service provider.
 - `mellon_sp_cert_file`: Sets the [MellonSPCertFile][`mod_auth_mellon`] directive for the public key location of the service provider.
 - `mellon_user`: Sets the [MellonUser][`mod_auth_mellon`] attribute to use for the username.
+- `mellon_secure_cookie`: Sets the [MellonSecureCookie][`mod_auth_mellon`] directive (use 'off' to enable insecure cookies in development environments)
+- `mellon_sp_entity_id`: Overrides the [MellonSPEntityId][`mod_auth_mellon`] to a custom value.
+- `mellon_session_dump`: Sets the [MellonSessionDump][`mod_auth_mellon`] directive to enable debug of mellon sessions.
 
 ###### `options`
 
